@@ -1,4 +1,4 @@
-# htmlconvert
+# converter
 wrap lines of a file into quotation marks and adds ',' at the end of each line except the last one.
 
 # why
