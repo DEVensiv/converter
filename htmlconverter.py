@@ -12,7 +12,7 @@ with open(path) as rfile:
         for line in rfile:
             if (line == "\n"):
                 continue
-            wfile.write("\"" + line[:-1] + "\",\n")
-            print("\"" + line[:-1] + "\",")
+            wfile.write("\"" + line[:-1].replace("\"", "\\\"") + "\",\n")
+            print("\"" + line[:-1].replace("\"", "\\\"") + "\",")
         wfile.write("\"\"")
         print("\"\"")
